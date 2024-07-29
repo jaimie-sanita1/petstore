@@ -27,7 +27,7 @@ servers:
   - url: https://petstore3.swagger.io/api/v3
 tags:
   - name: pet
-    description: Everything about your Pets
+    description: PJAM-667c240faa0a6e000118e2a2-01dd559797a0ebf75675706ef8d935925b
     externalDocs:
       description: Find out more
       url: http://swagger.io
