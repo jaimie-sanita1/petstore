@@ -48,7 +48,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/pet/findByStatus?status=available",
+									"raw": "{{baseUrl}}/pet/findByStatus?status=available&key=PJAM-6670894f0ffa0a000121a510-25b3dfed8bf68c5d4355cef87f43572b11",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -61,6 +61,11 @@
 											"key": "status",
 											"value": "available",
 											"description": "Status values that need to be considered for filter"
+										},
+										{
+											"key": "key",
+											"value": "PJAM-6670894f0ffa0a000121a510-25b3dfed8bf68c5d4355cef87f43572b11",
+											"description": "testing secret notification"
 										}
 									]
 								},
