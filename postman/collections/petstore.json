@@ -48,7 +48,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/pet/findByStatus?status=available&key=PJAM-6670894f0ffa0a000121a510-25b3dfed8bf68c5d4355cef87f43572b11",
+									"raw": "{{baseUrl}}/pet/findByStatus?status=available&key=PJAK-66a8e8a06e8f1600010b3088-c655e4df6e84dd354a131ffcadcad21b1a",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -64,7 +64,7 @@
 										},
 										{
 											"key": "key",
-											"value": "PJAM-6670894f0ffa0a000121a510-25b3dfed8bf68c5d4355cef87f43572b11",
+											"value": "PJAK-66a8e8a06e8f1600010b3088-c655e4df6e84dd354a131ffcadcad21b1a",
 											"description": "testing secret notification"
 										}
 									]
