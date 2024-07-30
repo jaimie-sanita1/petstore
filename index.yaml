@@ -86,7 +86,7 @@ paths:
       description: Add a new pet to the store
       operationId: addPet
       requestBody:
-        description: test postman api secret 
+        description: test postman api secret PJJJ-66a8e8a06e8f1600010b3088-c655e4df6e84dd354a131ffcadcad21b1a
         content:
           application/json:
             schema:
