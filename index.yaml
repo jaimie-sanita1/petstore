@@ -86,7 +86,7 @@ paths:
       description: Add a new pet to the store
       operationId: addPet
       requestBody:
-        description: Create a new pet in the store
+        description: test postman api secret 
         content:
           application/json:
             schema:
