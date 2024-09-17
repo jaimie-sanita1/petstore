@@ -1,8 +1,6 @@
 openapi: 3.0.3
 info:
   title: Swagger Petstore - OpenAPI 3.0
-  description: |-
-    This is a sample Pet Store Server based on the OpenAPI 3.0 specification. 
   contact:
     email: apiteam@swagger.io
     url: https://example.com/support
@@ -11,16 +9,16 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.11
 servers: 
-  - url: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE1NTA2OTkyNDgsImV4cCI6MjExNzA1MTI0OCwiYXVkIjoiIiwic3ViIjoiIn0.tqitpZDE4rRT9TFKz7WOn0YPufQwriU2Brq3--pWXUY
+  - url: ""
 components:
   securitySchemes:
     BearerAuth:
       type: http
       scheme: bearer
-      description: "Use Bearer token for authorization. Example: Bearer 1235"
+      description: "Use Bearer token for authorization."
 tags:
   - name: pet
-    description: Operations related to pets
+    description: description
     externalDocs:
       description: Find out more
       url: http://swagger.io
