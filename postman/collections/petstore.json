@@ -566,7 +566,12 @@
 									]
 								},
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
 								"url": {
 									"raw": "{{baseUrl}}/pet/:petId?name=<string>&status=<string>",
 									"host": [
@@ -599,8 +604,8 @@
 							},
 							"response": [
 								{
-									"id": "c7e288e7-eb8e-4fb2-abd7-c10d19f89218",
-									"name": "Invalid input",
+									"id": "bebf8d16-6eee-4f70-b435-3d8c65c1da6b",
+									"name": "Success",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
@@ -611,25 +616,13 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/pet/:petId?name=<string>&status=<string>",
+											"raw": "{{baseUrl}}/pet/:petId",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"pet",
 												":petId"
-											],
-											"query": [
-												{
-													"description": "Name of pet that needs to be updated",
-													"key": "name",
-													"value": "<string>"
-												},
-												{
-													"description": "Status of pet that needs to be updated",
-													"key": "status",
-													"value": "<string>"
-												}
 											],
 											"variable": [
 												{
@@ -638,8 +631,8 @@
 											]
 										}
 									},
-									"status": "Bad Request",
-									"code": 400,
+									"status": "OK",
+									"code": 200,
 									"_postman_previewlanguage": "text",
 									"header": [],
 									"cookie": []
@@ -701,15 +694,11 @@
 							},
 							"response": [
 								{
-									"id": "eaf678ac-10b5-4624-a85a-6bca39e1cf67",
-									"name": "Invalid pet value",
+									"id": "15640649-fa89-4501-8bc5-60eacd648cb8",
+									"name": "Success",
 									"originalRequest": {
 										"method": "DELETE",
 										"header": [
-											{
-												"key": "api_key",
-												"value": "<string>"
-											},
 											{
 												"description": "Added as a part of security scheme: oauth2",
 												"key": "Authorization",
@@ -732,8 +721,8 @@
 											]
 										}
 									},
-									"status": "Bad Request",
-									"code": 400,
+									"status": "OK",
+									"code": 200,
 									"_postman_previewlanguage": "text",
 									"header": [],
 									"cookie": []
@@ -792,16 +781,19 @@
 								{
 									"description": "(Required) ",
 									"key": "name",
-									"value": "<string>"
+									"value": "<string>",
+									"disabled": true
 								},
 								{
 									"description": "(Required) ",
 									"key": "photoUrls",
-									"value": "<string>"
+									"value": "<string>",
+									"disabled": true
 								},
 								{
 									"key": "id",
-									"value": "<long>"
+									"value": "<long>",
+									"disabled": true
 								},
 								{
 									"description": "pet status in the store",
@@ -1191,16 +1183,19 @@
 								{
 									"description": "(Required) ",
 									"key": "name",
-									"value": "<string>"
+									"value": "<string>",
+									"disabled": true
 								},
 								{
 									"description": "(Required) ",
 									"key": "photoUrls",
-									"value": "<string>"
+									"value": "<string>",
+									"disabled": true
 								},
 								{
 									"key": "id",
-									"value": "<long>"
+									"value": "<long>",
+									"disabled": true
 								},
 								{
 									"description": "pet status in the store",
@@ -1873,74 +1868,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "b7440ac5-eabf-4395-a9fe-202973c31a42",
-					"name": "successful operation",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"description": "Added as a part of security scheme: oauth2",
-								"key": "Authorization",
-								"value": "<token>"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"file\": \"<string>\"\n}",
-							"options": {
-								"raw": {
-									"headerFamily": "json",
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/pet/:petId/upload-image?additional_metadata=<string>",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"pet",
-								":petId",
-								"upload-image"
-							],
-							"query": [
-								{
-									"description": "Additional data to pass to server",
-									"key": "additional_metadata",
-									"value": "<string>"
-								}
-							],
-							"variable": [
-								{
-									"key": "petId"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						}
-					],
-					"cookie": [],
-					"body": "{\n  \"code\": \"<integer>\",\n  \"type\": \"<string>\",\n  \"message\": \"<string>\"\n}"
-				}
-			]
+			"response": []
 		}
 	],
 	"variable": [
