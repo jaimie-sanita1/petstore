@@ -10,8 +10,8 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.11
-servers:
-  - url: https://petstore3.swagger.io/api/v3
+servers: 
+  - url: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE1NTA2OTkyNDgsImV4cCI6MjExNzA1MTI0OCwiYXVkIjoiIiwic3ViIjoiIn0.tqitpZDE4rRT9TFKz7WOn0YPufQwriU2Brq3--pWXUY
 components:
   securitySchemes:
     BearerAuth:
