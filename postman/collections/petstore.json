@@ -1868,7 +1868,53 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "3aebaaeb-c3cc-4475-ab44-341cbf84acdc",
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: oauth2",
+								"key": "Authorization",
+								"value": "<token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"file\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pet/:petId/upload-image",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pet",
+								":petId",
+								"upload-image"
+							],
+							"variable": [
+								{
+									"key": "petId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [],
+					"cookie": []
+				}
+			]
 		}
 	],
 	"variable": [
