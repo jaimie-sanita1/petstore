@@ -1,0 +1,1170 @@
+{
+	"info": {
+		"_postman_id": "34932998-957cc65b-5012-4729-a004-f41e2598abdd",
+		"name": "Swagger Petstore - OpenAPI 3.0",
+		"description": "Contact Support:\n Email: apiteam@swagger.io",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pet",
+			"item": [
+				{
+					"name": "find-by-status",
+					"item": [
+						{
+							"name": "Finds Pets by status",
+							"id": "34932998-aae6708c-3bb4-4eae-8d29-8cbc6a68c670",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/pet/find-by-status?value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet",
+										"find-by-status"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+											"description": "Status values that need to be considered for filter"
+										}
+									]
+								},
+								"description": "Multiple status values can be provided with comma separated strings"
+							},
+							"response": [
+								{
+									"id": "34932998-b045c98c-7a3f-40ae-8b7c-1639db31f151",
+									"name": "Successful operation",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pet/find-by-status?value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												"find-by-status"
+											],
+											"query": [
+												{
+													"description": "Status values that need to be considered for filter",
+													"key": "value",
+													"value": "reference #/components/schemas/Resources not found in the OpenAPI spec"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"example\": {\n    \"schema\": []\n  }\n}"
+								},
+								{
+									"id": "34932998-0aaaa8cb-a351-4064-bf34-b5b96f8544ea",
+									"name": "Invalid status value",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pet/find-by-status?value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												"find-by-status"
+											],
+											"query": [
+												{
+													"description": "Status values that need to be considered for filter",
+													"key": "value",
+													"value": "reference #/components/schemas/Resources not found in the OpenAPI spec"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "34932998-aedc7689-4311-476d-bc88-7a50c2b655e5"
+				},
+				{
+					"name": "find-by-tags",
+					"item": [
+						{
+							"name": "Finds Pets by tags",
+							"id": "34932998-d108a9db-c5ad-4410-9b7c-7e206147e6ae",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/pet/find-by-tags?value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet",
+										"find-by-tags"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+											"description": "Tags to filter by"
+										}
+									]
+								},
+								"description": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing."
+							},
+							"response": [
+								{
+									"id": "34932998-9b06e61b-f45c-4b34-b4cf-f22aa72ecab4",
+									"name": "Successful operation",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pet/find-by-tags?value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												"find-by-tags"
+											],
+											"query": [
+												{
+													"description": "Tags to filter by",
+													"key": "value",
+													"value": "reference #/components/schemas/Resources not found in the OpenAPI spec"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"example\": {\n    \"schema\": []\n  }\n}"
+								},
+								{
+									"id": "34932998-a8060020-8c1a-44c7-9d87-96f30089d1bf",
+									"name": "Invalid tag value",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pet/find-by-tags?value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												"find-by-tags"
+											],
+											"query": [
+												{
+													"description": "Tags to filter by",
+													"key": "value",
+													"value": "reference #/components/schemas/Resources not found in the OpenAPI spec"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "34932998-9f7683a3-3a84-4c85-8780-b6442ab04c18"
+				},
+				{
+					"name": "{petId}",
+					"item": [
+						{
+							"name": "upload-image",
+							"item": [
+								{
+									"name": "Uploads an image",
+									"id": "34932998-a9806906-1b40-46ee-b361-e1cf75362129",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"example\": {\n    \"schema\": {\n      \"file\": \"exercitation nulla eu labore incididunt\"\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pet/:petId/upload-image?value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												":petId",
+												"upload-image"
+											],
+											"query": [
+												{
+													"key": "value",
+													"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+													"description": "Additional data to pass to the server"
+												}
+											],
+											"variable": [
+												{
+													"id": "ab30bc10-5380-4bda-8257-cb0344173371",
+													"key": "petId",
+													"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+													"description": "(Required) ID of pet to upload image for"
+												}
+											]
+										},
+										"description": "Upload an image for a pet"
+									},
+									"response": [
+										{
+											"id": "34932998-47facca8-bb75-4a64-94c6-2935a6c506bf",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"example\": {\n    \"schema\": {\n      \"file\": \"exercitation nulla eu labore incididunt\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/pet/:petId/upload-image?value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pet",
+														":petId",
+														"upload-image"
+													],
+													"query": [
+														{
+															"description": "Additional data to pass to the server",
+															"key": "value",
+															"value": "reference #/components/schemas/Resources not found in the OpenAPI spec"
+														}
+													],
+													"variable": [
+														{
+															"key": "petId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"responseTime": null,
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "34932998-b5f530f8-1619-4f1c-8773-69cf734544f0"
+						},
+						{
+							"name": "Find pet by ID",
+							"id": "34932998-3fc12bd7-484d-42ae-9776-ef4139dee75a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/pet/:petId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet",
+										":petId"
+									],
+									"variable": [
+										{
+											"id": "2258fbf3-504c-43c9-bc55-b4c51e43b435",
+											"key": "petId",
+											"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+											"description": "(Required) ID of pet to return"
+										}
+									]
+								},
+								"description": "Returns a single pet"
+							},
+							"response": [
+								{
+									"id": "34932998-426cd5ca-7bed-4fb4-8860-f3286a03b612",
+									"name": "Successful operation",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pet/:petId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												":petId"
+											],
+											"variable": [
+												{
+													"key": "petId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}"
+								},
+								{
+									"id": "34932998-124b39cd-2dd6-46f4-8546-2872e106b00d",
+									"name": "Invalid ID supplied",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pet/:petId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												":petId"
+											],
+											"variable": [
+												{
+													"key": "petId"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
+								},
+								{
+									"id": "34932998-8bb92331-cff1-4eb1-a73f-be2afcc75863",
+									"name": "Pet not found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pet/:petId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												":petId"
+											],
+											"variable": [
+												{
+													"key": "petId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Updates a pet in the store with form data",
+							"id": "34932998-52f029b6-a6be-44c2-98a7-1ecd157c837a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pet/:petId?value=reference %23/components/schemas/Resources not found in the OpenAPI spec&value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet",
+										":petId"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+											"description": "Name of pet that needs to be updated"
+										},
+										{
+											"key": "value",
+											"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+											"description": "Status of pet that needs to be updated"
+										}
+									],
+									"variable": [
+										{
+											"id": "c4e057fa-9c47-453f-a69b-4ae4ab75cacf",
+											"key": "petId",
+											"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+											"description": "(Required) ID of pet that needs to be updated"
+										}
+									]
+								},
+								"description": "Update pet with form data"
+							},
+							"response": [
+								{
+									"id": "34932998-0ceab6db-0ade-4188-bc30-ebb8a713ee4e",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pet/:petId?value=reference %23/components/schemas/Resources not found in the OpenAPI spec",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												":petId"
+											],
+											"query": [
+												{
+													"description": "Name of pet that needs to be updated",
+													"key": "value",
+													"value": "reference #/components/schemas/Resources not found in the OpenAPI spec"
+												}
+											],
+											"variable": [
+												{
+													"key": "petId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Deletes a pet",
+							"id": "34932998-9d61814f-3f17-4ca1-841b-aec0a6976c46",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "api_key",
+										"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+										"description": "API key for authorization"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/pet/:petId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet",
+										":petId"
+									],
+									"variable": [
+										{
+											"id": "dc3dfbc9-0a37-4f9a-a8ce-bb46ad32efcf",
+											"key": "petId",
+											"value": "reference #/components/schemas/Resources not found in the OpenAPI spec",
+											"description": "(Required) Pet ID to delete"
+										}
+									]
+								},
+								"description": "Deletes a pet from the store"
+							},
+							"response": [
+								{
+									"id": "34932998-05ec49f9-0f2b-48f3-8279-bf595ceb1af6",
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "API key for authorization",
+												"key": "api_key",
+												"value": "reference #/components/schemas/Resources not found in the OpenAPI spec"
+											},
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pet/:petId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												":petId"
+											],
+											"variable": [
+												{
+													"key": "petId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "34932998-2a778ee7-d688-439d-b1f5-dd659f0a6407"
+				},
+				{
+					"name": "Update an existing pet",
+					"id": "34932998-f342b5da-9f81-411e-88be-2b68056a74d3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pet",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pet"
+							]
+						},
+						"description": "Update an existing pet by Id"
+					},
+					"response": [
+						{
+							"id": "34932998-253e62cf-54f3-4834-99a2-2216a6003049",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pet",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}"
+						},
+						{
+							"id": "34932998-3c0b34ab-5119-49f2-abda-55cd20e52d25",
+							"name": "Invalid ID supplied",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pet",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						},
+						{
+							"id": "34932998-351ab472-7689-4e3a-a4f1-80a341564848",
+							"name": "Pet not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pet",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						},
+						{
+							"id": "34932998-66db187d-de85-45c9-b32f-b8c1aec344a9",
+							"name": "Validation exception",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pet",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Add a new pet to the store",
+					"id": "34932998-77918065-9fee-480a-8816-d8888e3998c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pet",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pet"
+							]
+						},
+						"description": "Add a new pet to the store"
+					},
+					"response": [
+						{
+							"id": "34932998-f658eb6f-c850-4d1d-ba0b-f94f067a9eec",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pet",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}"
+						},
+						{
+							"id": "34932998-1175675a-9e9b-49e4-81bc-b0b1261e33b5",
+							"name": "Invalid input",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pet",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						},
+						{
+							"id": "34932998-41b87e63-32be-43cd-ac23-d300266bbcbe",
+							"name": "Validation exception",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"example\": {\n    \"schema\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pet",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pet"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						}
+					]
+				}
+			],
+			"id": "34932998-cdeb959c-abf3-47c6-9a7d-11f28c075cfc"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearerToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": ""
+		}
+	]
+}
