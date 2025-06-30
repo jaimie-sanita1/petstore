@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "34932998-957cc65b-5012-4729-a004-f41e2598abdd",
-		"name": "Swagger Petstore - OpenAPI 3.0",
+		"name": "Petstore API",
 		"description": "Contact Support:\n Email: apiteam@swagger.io",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
