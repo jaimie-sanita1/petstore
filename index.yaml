@@ -30,7 +30,7 @@ tags:
   - name: user
     description: Operations about user
 paths:
-  /pet:
+  /petTestingUpdate:
     put:
       tags:
         - pet
