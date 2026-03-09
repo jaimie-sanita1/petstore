@@ -9,17 +9,17 @@ Cursor will load it for this workspace and expose tools from the configured MCP 
 
 1. Open this repo in Cursor.
 2. Restart Cursor (or reload the window) so MCP servers are discovered.
-3. In chat, ask: "List available MCP tools from `petstore-openapi`."
+3. In chat, ask: "List available MCP tools from `postman`."
 
 The included server uses:
 
-- package: `@ivotoby/openapi-mcp-server`
-- OpenAPI spec: `index.yaml`
-- API base URL: `https://petstore3.swagger.io/api/v3`
+- URL: `https://mcp.postman.com/minimal`
+- Authentication: OAuth (recommended, no static key required in config)
+- Tool mode: Minimal (switch URL to `https://mcp.postman.com/mcp` for Full mode, or `https://mcp.postman.com/code` for Code mode)
 
 ### Use your own custom MCP server
 
-Edit `.cursor/mcp.json` and replace the `petstore-openapi` entry with your own.
+Edit `.cursor/mcp.json` and replace the `postman` entry with your own.
 
 #### Option A: local stdio server
 
