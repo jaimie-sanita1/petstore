@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "petstore-openapi": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ivotoby/openapi-mcp-server",
+        "--transport",
+        "stdio",
+        "--name",
+        "petstore-openapi",
+        "--openapi-spec",
+        "index.yaml",
+        "--api-base-url",
+        "https://petstore3.swagger.io/api/v3",
+        "--tools",
+        "all"
+      ]
+    }
+  }
+}
